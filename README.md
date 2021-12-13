@@ -1,6 +1,10 @@
 # eyetracking.io
-<span style="color:#ff9a4d">mousetracking</span>으로 눈알 굴리기<br>
+###description
+Eyeballs follow the mouse pointer <br>
+Click to see the horror scene <br>
+no responsible web design <br>
+___
 [view page](https://jsweetpotato.github.io/eyetracking.io/)<br>
 
-##### no responsible
+
 
