@@ -1,7 +1,8 @@
 const balls = document.getElementsByClassName("ball");
 const video = document.querySelector("video");
-const audio = document.querySelector('audio');
+// const audio = document.querySelector('audio');
 const TRANSITION = "transition"
+
 
 document.onmousemove = (e) => {
   let x = e.clientX * 100 / window.innerWidth + "%";
@@ -14,12 +15,12 @@ document.onmousemove = (e) => {
   }
 }
 
-audio.volume = 0.1;
-audio.play();
+// audio.volume = 0.1;
+// audio.play();
 
 document.ontouchstart = (e) => {
-   let x = e.clientX * 100 / window.innerWidth + "%";
-  let y = e.clientY * 100 / window.innerHeight + "%";
+   let x = e.clientX * 20 / window.innerWidth + "%";
+  let y = e.clientY * 20 / window.innerHeight + "%";
   for(let i = 0; i < 2; i++){
     balls[i].style.left = x;
     balls[i].style.top = y;

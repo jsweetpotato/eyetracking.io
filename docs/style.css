@@ -13,52 +13,55 @@ body{
   align-items: center;
   overflow: hidden;
   height: 100vh;
-}
-.portrait{
-  cursor: pointer;
-  min-height: 100vh;
-  background-image: url(portrait.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+  background: black;
 }
 
-.portrait video{
-  min-height: 100vh;
+.wrap{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.portrait{
+  height: 100vh;
+  filter: drop-shadow(0px 0px 3px rgba(58, 58, 58, 0.329));
+  /* transform: scale(0.9); */
+  /* opacity: 0.8; */
+}
+
+video{
+  cursor: url("https://img.icons8.com/ios-glyphs/30/ffffff/hand-cursor.png"), pointer;
+  height: 100vh;
+  align-self: center;
+  position: absolute;
   opacity: 0;
-  z-index: 2;
+  z-index: 3;
+  user-select: none;
 }
 
 .eyes{
-  top: 50;
-  left: 50;
   position: absolute;
-  width: 500px;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  gap: 110px;
   align-items: center;
   flex-wrap: nowrap;
+  z-index: -4;
 }
 
 .eye{
-  width: 100px;
-  height: 36px;
   display: inline-block;
-  margin: 72px;
-  border-radius: 50%;
   position: relative;
-  overflow: hidden;
   filter: grayscale(1);
 }
 
 
 .ball{
-  width: 42px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
   background: url(./eye.png) no-repeat 50% 50% /cover;
   position: absolute;
   top: 50%;
@@ -70,78 +73,4 @@ body{
 
 .transition{
   transition: 0.5s all;
-}
-
-@media(max-width:1024px) {
-  html {
-    overflow: hidden;
-  }
-
-  body {
-    transform: translateX(-13%);
-    width: 130%;
-    min-height: 100vh;
-    overflow: visible;
-  }
-
-  .portrait {
-    transform: scale(1.0);
-    overflow: hidden;
-  }
-
-  .eyes{
-    transform: scale(1.25);
-  }
-}
-
-@media(max-width:768px){
-  html{
-    overflow: hidden;
-    background: #000;
-  }
-  
-  body{
-    transform: translateX(-6%);
-    width: 110%;
-    min-height: 100vh;
-    overflow: visible;
-  }
-  
-  .portrait{
-    transform: scale(1.0);
-    overflow: hidden;
-    width: 150%;
-    overflow: visible;
-  }
-
-  .eyes {
-    transform: scale(1);
-  }
-
-}
-
-@media(max-width:500px) {
-  html {
-    overflow: hidden;
-    background: #000;
-  
-  }
-
-  body {
-    transform: translateX(-15%);
-    width: 140%;
-    min-height: 100vh;
-    overflow: visible;
-  }
-
-  .portrait {
-    transform: scale(0.7);
-    overflow: hidden;
-    width: 150%;
-    overflow: visible;
-  }
-
-  .eyes {
-    transform: scale(1.0);
-  }
 }
