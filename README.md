@@ -5,7 +5,7 @@ Click to see the horror scene <br>
 no responsible web design 
 this is working only **desktop**
 ___
-[view page](https://jsweetpotato.github.io/eyetracking.io/)<br>
+[view page](https://jsweetpotato.github.io/horrorface.io/)<br>
 
 
 
