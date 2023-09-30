@@ -1,12 +1,12 @@
-::selection{
+::selection {
   background: none;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   position: relative;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ body{
   background: black;
 }
 
-.wrap{
+.wrap {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -25,15 +25,16 @@ body{
   align-self: center;
 }
 
-.portrait{
+.portrait {
   height: 100vh;
   filter: drop-shadow(0px 0px 3px rgba(58, 58, 58, 0.329));
   /* transform: scale(0.9); */
   /* opacity: 0.8; */
 }
 
-video{
-  cursor: url("https://img.icons8.com/ios-glyphs/30/ffffff/hand-cursor.png"), pointer;
+video {
+  cursor: url("https://img.icons8.com/ios-glyphs/30/ffffff/hand-cursor.png"),
+    pointer;
   height: 100vh;
   align-self: center;
   position: absolute;
@@ -42,27 +43,26 @@ video{
   user-select: none;
 }
 
-.eyes{
+.eyes {
   position: absolute;
   height: 100%;
   display: flex;
-  gap: 110px;
+  gap: 7vmin;
   align-items: center;
   flex-wrap: nowrap;
   z-index: -4;
 }
 
-.eye{
+.eye {
   display: inline-block;
   position: relative;
   filter: grayscale(1);
 }
 
-
-.ball{
-  width: 46px;
-  height: 46px;
-  background: url(./eye.png) no-repeat 50% 50% /cover;
+.ball {
+  width: 5vmin;
+  height: 5vmin;
+  background: url(./eye.png) no-repeat 50% 50% / cover;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -70,7 +70,6 @@ video{
   border-radius: 50%;
 }
 
-
-.transition{
+.transition {
   transition: 0.5s all;
 }

@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
-  <title>Eye Tracking</title>
-</head>
-<body>
-  <!-- <audio src="Silent Hill Movie Theme.mp3" preload loop autoplay></audio> -->
-  <div class="wrap">
-    <div class="eyes">
-      <div class="eye left">
-        <div class="ball"></div>
-        <img class="eyeball" src="./eyeball.png" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content=" initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Eye Tracking</title>
+  </head>
+  <body>
+    <!-- <audio src="Silent Hill Movie Theme.mp3" preload loop autoplay></audio> -->
+    <div class="wrap">
+      <div class="eyes">
+        <div class="eye left">
+          <div class="ball"></div>
+          <img class="eyeball" src="./eyeball.png" alt="" />
+        </div>
+        <div class="eye right">
+          <div class="ball"></div>
+          <img src="./eyeball.png" alt="" />
+        </div>
       </div>
-      <div class="eye right">
-        <div class="ball"></div>
-        <img src="./eyeball.png" alt="">
-      </div>
+      <video src="portriat.mp4" preload="metadata" playsinline></video>
+      <img class="portrait" src="./portrait.png" />
     </div>
-    <video src="portriat.mp4" preload="metadata" playsinline></video>
-   <img class="portrait" src="./portrait.png" >
-  </div>
-</body>
+  </body>
 </html>
